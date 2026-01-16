@@ -52,31 +52,22 @@ two-tier-app/
   * `22` (SSH)
   * `8080` (Jenkins)
   * `5000` (Flask app)
-
 ---
-
 ### 🔹 Step 2: Install System Dependencies
 
 ```bash
 sudo apt update
 sudo apt install -y python3 python3-pip git
+sudo apt install -y python3 python3-pip git docker.io docker-compose mysql-client
+sudo systemctl start docker
+sudo systemctl enable docker
 ```
-
 ---
-
 ### 🔹 Step 3: Install Flask & MySQL Connector
 
 ```bash
 pip3 install flask mysql-connector-python
 ```
-
-Verify:
-
-```bash
-python3 -c "import flask, mysql.connector; print('Dependencies OK')"
-```
-
----
 
 ### 🔹 Step 4: Create Flask Application (app.py)
 
