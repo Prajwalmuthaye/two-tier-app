@@ -1,6 +1,5 @@
 # Two-Tier Flask + MySQL Application with Jenkins CI/CD
 
-Prajwal Muthaye
 This project demonstrates a **Two-Tier Web Application** using **Flask (Python)** as the frontend/backend service and **MySQL** as the database, deployed and automated using **Jenkins CI/CD** on an **AWS EC2 instance**.
 
 ---
